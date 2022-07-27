@@ -1,0 +1,24 @@
+﻿@page
+@model Abby_.Pages.Categories.CreateModel
+
+
+<form method="post">
+    <div class="border p-3 mt-14">
+        <div class="row pb-2">
+            <h2 class="text-primary p-lg-3">Create Category </h2>
+            <hr />
+        </div>
+        <div class="mb-3">
+            <label asp-for="Category.Name"></label>
+            <input asp-for="Category.Name" class="form-control" />
+            <span asp-validation-for="Category.Name" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Category.DisplayOrder"></label>
+            <input asp-for="Category.DisplayOrder" class="form-control" />
+            <span asp-validation-for="Category.DisplayOrder" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary" sytle="widht:150px">Create</button>
+        <a asp-page="Index" class="btn btn-secondary" style="widht:150px">&lt;Back to List</a>
+    </div>
+</form>
